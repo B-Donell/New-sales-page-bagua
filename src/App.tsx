@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, BedDouble, Coins, Heart, CheckCircle2, ArrowRight } from 'lucide-react';
-import instructorImage from '../public/instructor.jpg';
+import firstLandingImage from '../images/first_landing_image.png';
+import secondLandingImage from '../images/second_landing_image.png';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
             {/* Image */}
             <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src={instructorImage}
+                src={firstLandingImage}
                 alt="Especialista em Feng Shui em um quarto harmonizado" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -77,7 +78,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?auto=format&fit=crop&q=80&w=1080" 
+                src={secondLandingImage}
                 alt="Exemplos de quartos com Feng Shui" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
