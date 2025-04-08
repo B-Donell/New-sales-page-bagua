@@ -19,7 +19,7 @@ This is a Vite + React + TypeScript project styled with Tailwind CSS, designed a
 - **Public assets**: `/public/`
 - **Styling**: Tailwind CSS (`index.css`, `tailwind.config.js`)
 - **Build tool**: Vite
-- **TypeScript config**: `tsconfig.json`
+- **TypeScript config**: `tsconfig.json` + `tsconfig.app.json`
 
 ---
 
@@ -33,6 +33,9 @@ This is a Vite + React + TypeScript project styled with Tailwind CSS, designed a
 
 - **Removed** import of the old instructor image (`public/instructor.jpg`).
 
+- **Updated both "Quero um Quarto Próspero" buttons** to link to:  
+  `https://chk.eduzz.com/e3me3xsk`
+
 - **Added** image module declarations in `src/declarations.d.ts` to support PNG imports:
   ```ts
   declare module '*.png' {
@@ -40,6 +43,10 @@ This is a Vite + React + TypeScript project styled with Tailwind CSS, designed a
     export default value;
   }
   ```
+
+- **Fixed TypeScript module resolution** by setting  
+  `"moduleResolution": "node"` in `tsconfig.app.json`  
+  (was `"bundler"` before, which caused missing module errors).
 
 - **Dependencies**:  
   Confirmed `react`, `react-dom`, `lucide-react`, and their types are installed.  
@@ -54,6 +61,7 @@ This is a Vite + React + TypeScript project styled with Tailwind CSS, designed a
 
 - The landing page is rendered by `src/App.tsx`.
 - Two key images are imported from `/images/` and displayed in the Hero and Course sections.
+- Both call-to-action buttons now redirect to the sales link.
 - The project uses React 18 JSX runtime (`react-jsx`).
 - Tailwind CSS is used for styling.
 - No test suite is currently configured (`yarn test` script missing).

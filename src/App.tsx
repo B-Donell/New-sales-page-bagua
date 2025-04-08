@@ -38,7 +38,7 @@ function App() {
           {/* CTA Button - Centered below both columns */}
           <div className="text-center">
             <a 
-              href="#oferta" 
+              href="https://chk.eduzz.com/e3me3xsk"
               className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold px-12 py-5 rounded-lg text-xl transition-colors"
             >
               Quero um Quarto Próspero
@@ -96,7 +96,7 @@ function App() {
                   São <strong>12h de aulas</strong> onde te mostro como transformar seu quarto em um poderoso portal de <strong>prosperidade e harmonia</strong>. Mesmo que você nunca tenha ouvido falar de feng shui antes.
                 </p>
                 <a 
-                  href="#oferta" 
+                  href="https://chk.eduzz.com/e3me3xsk"
                   className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
                 >
                   Quero um Quarto Próspero
